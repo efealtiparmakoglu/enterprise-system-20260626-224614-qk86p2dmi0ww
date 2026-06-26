@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-20260626-224614-qk86p2dmi0ww-service
+spec:
+  selector:
+    app: enterprise-system-20260626-224614-qk86p2dmi0ww
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
